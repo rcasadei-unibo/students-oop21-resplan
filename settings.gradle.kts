@@ -7,5 +7,13 @@
  * in the user manual at https://docs.gradle.org/7.4.1/userguide/multi_project_builds.html
  */
 
+ buildscript {
+     repositories {
+         gradlePluginPortal()
+         mavenCentral()
+     }
+ }
+
+
 rootProject.name = "Resplan"
 include("app")
